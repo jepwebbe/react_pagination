@@ -37,8 +37,8 @@ const Update = (e, id, data) => {
   });
 };
 
-const Remove = (e, id) => {
-  return axios.delete(`${API_URL}/${BASEURL}/${e}/${id}`, {
+const Remove = (e) => {
+  return axios.delete(`${API_URL}/${BASEURL}/${e}`, {
     headers: authHeader(),
   });
 };

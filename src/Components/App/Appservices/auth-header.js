@@ -1,7 +1,7 @@
 export default function authHeader() {
     // If the token exists in localStorage, parse it to a js object
-    const currentToken = localStorage.getItem("token") ?
-    JSON.parse(localStorage.getItem("token")) :
+    const currentToken = localStorage.getItem("loginToken") ?
+    JSON.parse(localStorage.getItem("loginToken")) :
     "";
     // If the currentToken exists and has an access token, return it with headers
     if (currentToken && currentToken.state.access_token) {

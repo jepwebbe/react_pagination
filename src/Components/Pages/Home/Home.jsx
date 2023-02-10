@@ -1,15 +1,18 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import { Page } from "../../../Styles/Layout/Page";
+import { Products } from "./Products/Products";
+import { ProductsDetailed } from "./Products/ProductsDetailed";
 import { HomeStyled } from "./Styled.Home";
 
 const Home = () => {
   return (
-    <Page title="Hjem" description="Dette er hjem">
+    <Page title="Pagination" description="Dette er hjem">
       <HomeStyled>
         <div>a</div>
-        <div>b</div>
+        <Products />
         <div>c</div>
-        <div>d</div>
+        <Outlet />
         <div>e</div>
       </HomeStyled>
     </Page>
